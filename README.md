@@ -2,7 +2,7 @@
 
 A high-performance naval battle simulator built with uncompromising software architecture, delivering a robust 2D rendering engine coupled with asynchronous data synchronization and a reactive user interface.
 
-## 🏗 Architecture & Tech Stack
+##  Architecture & Tech Stack
 
 The architecture strictly separates the game engine (WebGL) from the User Interface (DOM), ensuring stability and maximum performance:
 - **PixiJS v8**: The core 2D renderer handling vector geometry, sprites, and the core synchronous physics loop.
@@ -12,7 +12,7 @@ The architecture strictly separates the game engine (WebGL) from the User Interf
 
 *For detailed architectural patterns (Delta Time, Object Pooling, Mark & Sweep), please refer to [ARCHITECTURE.md](ARCHITECTURE.md).*
 
-## 🚀 Setup & Commands
+##  Setup & Commands
 
 Ensure you are using **Node.js >=20.19**.
 
@@ -30,7 +30,7 @@ npm install
 | `npm run test` | Runs the full Playwright E2E Test suite headlessly. |
 | `npm run lint` | Runs ESLint to check for code quality and strict adherence to rules. |
 
-## 🕹️ Controls
+##  Controls
 
 **Desktop (Keyboard):**
 - **W / S**: Move Forward / Backward
@@ -45,7 +45,7 @@ npm install
 - The UI natively supports continuous holding logic (`pointerdown` and `pointerup`) for smooth steering.
 - The game automatically pauses when the browser tab loses visibility (`visibilitychange`).
 
-## 🌐 Network Scenarios & MSW (Debug Panel)
+##  Network Scenarios & MSW (Debug Panel)
 
 The game includes a dedicated **MSW Config Panel** inside the **Options Menu**. 
 This panel allows the evaluator or developer to dynamically toggle network scenarios at runtime, including:
@@ -57,12 +57,12 @@ This panel allows the evaluator or developer to dynamically toggle network scena
 
 Use the **Reset Mock Data** button in the panel to wipe all rankings and history.
 
-## 🧪 Testing & Profiling
+##  Testing & Profiling
 
 This project strictly adheres to quality assurance:
 - **Playwright (E2E Tests)**: The `playwright` suite covers 8 critical flows including Navigation, Canvas rendering, Controls, Game Over conditions, Automatic Pausing, and MSW Failure scenarios. Test traces are automatically retained on failure (`retain-on-failure`), and an HTML report is generated (`playwright-report`).
 - **Performance Profiling**: The Object Pooling system and Garbage Collection (GC) sweeps have been heavily optimized. You will not experience GC stuttering or Frame Drops even with hundreds of entities and projectiles active.
 
-## 📜 Assets & Licenses
+##  Assets & Licenses
 
 Audio files and textures have been replaced with Public Domain (CC0) assets from Kenney Studio (UI Audio, Impact Sounds, and Ships) to ensure strict open-source compliance.
